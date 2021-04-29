@@ -1,0 +1,15 @@
+gitのoriginはmasterからmainに変わったと聞いたことがあったので以下のようにしたところエラーが出てしまった。
+masterかmainかわからないまま実行したのが原因
+https://qiita.com/sahn/items/caa1d621ecbfdc08d853
+を参考に
+$ git remote add origin <リンク>
+$ git push -u origin main
+をしてしまい以下のようなエラーが出た。
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/tetra-four/test.git'
+
+mainをmasterに変えて
+$ git push -u origin master
+にしたところうまくいった。
+
+よくわからないまま勝手なことをするのはやめよう！
